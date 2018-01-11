@@ -14,6 +14,10 @@ function streak(input) {
     return "You didn't select a group of cells. Check your input";
   }
 }
+function getSMA(input, input2) {
+  return "test approved";
+}  
+
 
 function grabCurrent50SMA(input, input2) {
   var sum = 0;
@@ -39,7 +43,8 @@ function grabCurrent50SMA(input, input2) {
   }  
 }
 
-function grabCurrent100SMA() {
+function grabCurrent100SMA(input, input2) {
+  return getSMA(input, input2);
 }  
 
 function grabCurrent200SMA() {
