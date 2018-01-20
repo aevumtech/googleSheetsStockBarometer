@@ -49,4 +49,23 @@ function grabCurrent100SMA(input, input2) {
 
 function grabCurrent200SMA() {
 }  
-  
+
+function averageExcludingZero(input) {
+  var sum = 0;
+  var countMinusZero = 0;
+  if (input.map) {
+    for (i = 0; i < input.length; i++) {
+      if (input[i] != "#DIV/0!") {
+          sum += parseFloat(input[i]);
+        countMinusZero++;
+      }    
+    }  
+  }
+  return sum/countMinusZero;
+}  
+function tester(input) {
+  if (input == "#DIV/0!") {
+    return "Worked";
+  }  
+  return "false";
+}  
