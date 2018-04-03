@@ -11,7 +11,7 @@ function streak(input) {
     }  
     return streakSum; 
   } else {
-    return "You didn't select a group of cells. Check your input";
+    return input;
   }
 }
 function getSMA(input, input2) {
